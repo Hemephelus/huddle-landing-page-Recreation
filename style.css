@@ -2,19 +2,98 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-:root{
-    --Pink: hsl(322, 100%, 66%);
---Light_Pink: hsl(321, 100%, 78%);
---Light_Red: hsl(0, 100%, 63%);
+*{
+    margin: none;
+    padding: none;
 }
 
-nav > button{
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    border-radius: 30px;
-
+:root {
+    /* Primary */
+    --Pink: hsl(322, 100%, 66%);
+    --Light_Pink: hsl(321, 100%, 78%);
+    --Light_Red: hsl(0, 100%, 63%);
+    /* Neutral */
+    --Very_Dark_Cyan: hsl(192, 100%, 9%);
+    --Very_Pale_Blue: hsl(207, 100%, 98%);
 }
 
 body{
+    padding: 0 5%;
+    
     font-family: 'Open Sans', sans-serif;
 }
+
+button{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+nav img{
+    height: 30px;
+}
+
+
+nav>button {
+    border: 1.5px solid var(--Pink);
+    border-radius: 25px;
+    color: var(--Pink);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 2px var(--Light_Pink);
+    cursor: pointer;
+    padding:5px 25px;
+    align-self: center;
+
+}
+
+nav > button:hover {
+    border: 1.5px solid var(--Light_Pink);
+    color: var(--Light_Pink);
+}
+
+.Intro{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Very_Dark_Cyan);
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Intro h1{
+    text-align: center;
+}
+
+.Intro p{
+    text-align: center;
+    align-self: center;
+    width: 500px;
+}
+
+.Intro button{
+    background-color: var(--Pink);
+    border: none;
+    padding: 15px 55px;
+    color: var(--Very_Pale_Blue);
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgb(196, 191, 191);
+    cursor: pointer;
+}
+
+.Intro button:hover{
+    background-color: var(--Light_Pink);
+}
+
+
+
